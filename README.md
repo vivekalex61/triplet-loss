@@ -18,18 +18,16 @@ By computing similarity between the face embeddding we can conclude how much sim
 
 ##### Triplet loss
 
-![alt text](https://raw.githubusercontent.com/vivekalex61/insightsearch/master/test/overall_sentiments.png)
+![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/blob/main/images/tripler.png)
 Intuition behind the triplet loss is we will a have three types of images. A positive, Anchor and Negative image.
 Anchor and postive  image will be selected from a same class and anchor from a different class.
 In Triplet loss, Train the model to reduce distance between anchor and positive image and increase the distance between anchor image and negative image.
 
 In other words, We are pointing similar images to a single point in embeddding space and creating a margin between similar images and negative images.
-![alt text](https://raw.githubusercontent.com/vivekalex61/insightsearch/master/test/overall_sentiments.png)                      
+![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/blob/main/images/triplet_loss2.png)                      
                   
                   fig 1 formula
-![alt text](https://raw.githubusercontent.com/vivekalex61/insightsearch/master/test/overall_sentiments.png)
 
-                    fig 1 formula
 ## Overview of Tripletloss
 - Datasets and Data-Loading
 - Image Preprocessing
@@ -60,23 +58,21 @@ Model building has two parts:
 #### 1)Base model creation :
 Base model can be made by using any ptrtrained archetectures like VGG,ResNet etc.
 we should replace input shape with image dimensions and output with dimension of embedding we need.
-[alt text](https://raw.githubusercontent.com/vivekalex61/insightsearch/master/test/overall_sentiments.png)
+[alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/blob/main/images/basemodel_plot.png)
 
 #### 2)Sharing the base model with three inputs(Postivie, Anchor, Negative).
-![alt text](https://raw.githubusercontent.com/vivekalex61/insightsearch/master/test/overall_sentiments.png)
+![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/blob/main/images/tripletmodel_plot.png)
 #### 3)Custom Triplet loss function 
 
 Ref : https://arxiv.org/pdf/1503.03832.pdf
 
-![alt text](https://raw.githubusercontent.com/vivekalex61/insightsearch/master/test/overall_sentiments.png)
-![alt text](https://raw.githubusercontent.com/vivekalex61/insightsearch/master/test/overall_sentiments.png)
-![alt text](https://raw.githubusercontent.com/vivekalex61/insightsearch/master/test/overall_sentiments.png)
+![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/blob/main/images/tripletloss%20formula.png)
 
 
 ref :https://omoindrot.github.io/triplet-loss
 ## Predictions
-![alt text](https://raw.githubusercontent.com/vivekalex61/insightsearch/master/test/overall_sentiments.png)
-![alt text](https://raw.githubusercontent.com/vivekalex61/insightsearch/master/test/overall_sentiments.png)
+![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/blob/main/images/epoch.png)
+![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/blob/main/images/Screenshot_2022-04-27_13-32-40.png)
 
 
 ## End Notes
