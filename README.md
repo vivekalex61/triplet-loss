@@ -59,7 +59,7 @@ Model building has three parts:
 #### 1)Base model creation :
 Base model can be made by using any ptrtrained archetectures like VGG,ResNet etc.
 we should replace input shape with image dimensions and output with dimension of embedding we need.
-[alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/main/images/basemodel_plot.png)
+![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/main/images/basemodel_plot.png)
 
 #### 2)Sharing the base model with three inputs(Postivie, Anchor, Negative).
 ![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/main/images/tripletmodel_plot.png)
