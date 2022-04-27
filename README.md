@@ -18,13 +18,13 @@ By computing similarity between the face embeddding we can conclude how much sim
 
 ##### Triplet loss
 
-![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/blob/main/images/tripler.png)
+![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/main/images/tripler.png)
 Intuition behind the triplet loss is we will a have three types of images. A positive, Anchor and Negative image.
 Anchor and postive  image will be selected from a same class and anchor from a different class.
 In Triplet loss, Train the model to reduce distance between anchor and positive image and increase the distance between anchor image and negative image.
 
 In other words, We are pointing similar images to a single point in embeddding space and creating a margin between similar images and negative images.
-![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/blob/main/images/triplet_loss2.png)                      
+![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/main/images/triplet_loss2.png)                      
                   
                   fig 1 formula
 
@@ -42,13 +42,14 @@ The aim of pre-processing is an improvement of the image data that suppresses un
 . The aim of pre-processing is an improvement of the image data that suppresses undesired distortions or enhances some image features relevant for further processing and analysis task. 
  
 Ref : https://www.mygreatlearning.com/blog/introduction-to-image-pre-processing/
+
 MNIST digits classification dataset. This is a dataset of 60,000 28x28 grayscale images of the 10 digits, along with a test set of 10,000 images. More info can be found at the MNIST homepage.
 #### Triplet image pair creation
 The model needs pair of inputs (postive image, anchor image , negative image)
 
 ### Model building and training
 
-Model building has two parts:
+Model building has three parts:
 
 1)Base model creation 
 
@@ -58,21 +59,21 @@ Model building has two parts:
 #### 1)Base model creation :
 Base model can be made by using any ptrtrained archetectures like VGG,ResNet etc.
 we should replace input shape with image dimensions and output with dimension of embedding we need.
-[alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/blob/main/images/basemodel_plot.png)
+[alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/main/images/basemodel_plot.png)
 
 #### 2)Sharing the base model with three inputs(Postivie, Anchor, Negative).
-![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/blob/main/images/tripletmodel_plot.png)
+![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/main/images/tripletmodel_plot.png)
 #### 3)Custom Triplet loss function 
 
 Ref : https://arxiv.org/pdf/1503.03832.pdf
 
-![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/blob/main/images/tripletloss%20formula.png)
+![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/main/images/tripletloss%20formula.png)
 
 
 ref :https://omoindrot.github.io/triplet-loss
 ## Predictions
-![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/blob/main/images/epoch.png)
-![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/blob/main/images/Screenshot_2022-04-27_13-32-40.png)
+![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/main/images/epoch.png)
+![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/main/images/Screenshot_2022-04-27_13-32-40.png)
 
 
 ## End Notes
