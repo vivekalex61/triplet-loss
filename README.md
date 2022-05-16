@@ -65,14 +65,19 @@ we should replace input shape with image dimensions and output with dimension of
 ![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/main/images/tripletmodel_plot.png)
 #### 3)Custom Triplet loss function 
 
-Ref : https://arxiv.org/pdf/1503.03832.pdf
 
 ![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/main/images/tripletloss%20formula.png)
 
+Ref : 1)https://arxiv.org/pdf/1503.03832.pdf
+      2)https://github.com/Ekeany
+      3)https://omoindrot.github.io/triplet-loss
 
-ref :https://omoindrot.github.io/triplet-loss
-## Predictions
 ![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/main/images/epoch.png)
+
+## Predictions
+
+The classes are clustered together.
+
 ![alt text](https://raw.githubusercontent.com/vivekalex61/triplet-loss/main/images/Screenshot_2022-04-27_13-32-40.png)
 
 
